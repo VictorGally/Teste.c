@@ -93,6 +93,29 @@
 //numeros[3] = 40;
 //numeros[4] = 50;
 
+//Percorrer vetor pela lista
+//int buscaLinear(int lista[], int tamanho, int valor){
+    //for(int i = 0; < tamanho; i++){
+        //if (lista[i] == valor){
+            //return i; // Retorna o índice onde encontrou o valor
+        //}
+    //}
+    //return -1; // Retorna -1 se não encontrou
+//}
+
+// Percorrer Lista encadeada
+int buscaLinearLista(struct No* inicio, int valor){
+    int pos = 0;
+    struct No* atual = inicio;
+    while (atual != NULL){
+        if (atual->dado == valor){
+            return pos;
+        }
+        atual = atual->proximo;
+        pos++;
+    }
+    return -1;
+}
 //return 0;
 
 //}
