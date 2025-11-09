@@ -104,18 +104,18 @@
 //}
 
 // Percorrer Lista encadeada
-int buscaLinearLista(struct No* inicio, int valor){
-    int pos = 0;
-    struct No* atual = inicio;
-    while (atual != NULL){
-        if (atual->dado == valor){
-            return pos;
-        }
-        atual = atual->proximo;
-        pos++;
-    }
-    return -1;
-}
+//int buscaLinearLista(struct No* inicio, int valor){
+    //int pos = 0;
+    //struct No* atual = inicio;
+    //while (atual != NULL){
+        //if (atual->dado == valor){
+            //return pos;
+        //}
+        //atual = atual->proximo;
+        //pos++;
+    //}
+    //return -1;
+//}
 //return 0;
 
 //}
