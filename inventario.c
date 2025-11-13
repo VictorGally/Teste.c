@@ -117,7 +117,7 @@ void inserirListaEstatica(ListaEstatica *lista, const char* texto){
     // se sim, a lista esta cheia e a função retorna.
     if (lista->quantidade == TAM_MAX){
         printf("Erro: Lista cheia! nao e possivel inserir\n");
-        return 0;
+        return;
     }
     // A inserção ocorre na primeira "linha" livre da ma
     // Para strings, não podemos fazer "lista->dados[i] texto:" porque em C não se pode atribuir vetores/ strings
@@ -143,7 +143,7 @@ void removerListaEstatica(ListaEstatica *lista, const char* texto){
 
     // Tratamento de Erro: Se o loop terminar e pos continuar -1, o item não foi encontrado.
     if (pos == -1){
-        printd("Erro: Texto \"%s\" nao encontrado na lista.\n", texto);
+        printf("Erro: Texto \"%s\" nao encontrado na lista.\n", texto);
         return;
     }
 
@@ -261,7 +261,6 @@ void listarListaEncadeada(const ListaEncadeada lista){
     }
 printf("]\n");
 }
-
 void liberarListaEncadeada(ListaEncadeada *lista){
     No *atual = *lista;
     No *proximo;
@@ -270,5 +269,5 @@ void liberarListaEncadeada(ListaEncadeada *lista){
         free(atual->dado);
         free(atual);
     }
-    return 0;
+    return;
 }
