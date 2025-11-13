@@ -9,7 +9,7 @@ typedef struct {
 #define MAX 5
 
 typedef struct {
-    Pessoa intens[MAX];
+    Pessoa itens[MAX];
     int inicio;
     int fim;
     int total;
@@ -77,5 +77,5 @@ int main() {
     printf("Pessoa removida: %s, %d\n", removida.nome, removida.idade);
     mostrarFila(&f); // Mostra a fila após a remoção
     return 0;
-    
+
 }
