@@ -6,7 +6,7 @@ struct No {
     char valor[50];
     struct No* esquerda;
     struct No* direita;
-};
+} No;
 
 struct No* criarNo(char* valor) {
     struct No* novo = (struct No*) malloc(sizeof(struct No));
